@@ -4,7 +4,7 @@ import CompPersona from './CompPersona';
 
 
 function App() {
-  const titulo = "Mi componente persona.";
+  const titulo = "Mi componente personaco";
   
 
   return (
