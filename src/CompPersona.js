@@ -5,7 +5,7 @@ class CompPersona extends React.Component {
     constructor() {
         super();
         this.state = {
-            nombre: "Lucía",
+            nombre: "Lucia",
             apellidos: "Bermejo",
             profesion: "Programadora"
         };
