@@ -1,25 +1,23 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 import CompPersona from './CompPersona';
 
-
+const ListaPersonas = (props) => {
+  return (<div>
+    <ul>
+      <li><label>Nombre: {props.nombre}</label></li>
+      <li><label>Apellidos: {props.apellidos}</label></li>
+      <li><label>Profesion: {props.profesion}</label></li>
+    </ul>
+  </div>)
+}
 function App() {
-  const titulo = "Mi componente personaco";
-  
-
+  const Titulo = <h1>Mi componente persona</h1>
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1> {titulo}</h1>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Titulo />
+        <ListaPersonas nombre="Lucía" apellidos="Bermejo" profesion="programadora" />
         <CompPersona />
       </header>
     </div>
